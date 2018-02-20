@@ -1,0 +1,481 @@
+/* ===========================
+     Author: Bhargav Gandhi (BG)
+     Description: _cont.scss
+     =========================== */
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  background: #f2f2f2 !important;
+  color: #9D98A5 !important;
+  /*border: 1px solid #D6E9C6 !important;*/
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: #EED3D7 !important;
+  background-color: #B94A48 !important;
+  /*border: 0px solid #EED3D7 !important;*/
+}
+
+.parsley-error {
+  input.radio,
+  input[type=radio] {
+    border: 1px solid #B94A48 !important;
+  }
+}
+
+.parsley-errors-list {
+  margin: 2px 0 3px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  display: none;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}
+/* form styles */
+form {
+  figure {
+    margin: 32px auto 0;
+    text-align: left;
+    outline: none;
+    font-family: $fontStack;
+  }
+
+  input {
+    width: 95%;
+    height: 45px;
+    padding: 5px 15px 0 20px;
+    margin: 0;
+    background: #f2f2f2;
+    border: 0;
+    border-radius: 0 !important;
+    /*  border:1px solid #0000ff;*/
+    text-align: left;
+    display: block !important;
+    outline: none;
+    color: #000000;
+    font-size: 12px;
+    font-size: 0.8em;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: $fontStack;
+  }
+
+  textarea {
+    width: 100%;
+    height: 120px;
+    padding: 15px 15px 5px 20px;
+    margin: 0;
+    background: #f2f2f2;
+    border: 0;
+    /*border:1px solid #0000ff;*/
+    text-align: left;
+    font-size: 12px;
+    font-size: 0.8em;
+    font-family: $fontStack;
+    letter-spacing: 0;
+    color: #fontColor;
+    display: block !important;
+    outline: none;
+    // -webkit-font-smoothing: antialiased;
+    color: #000000;
+  }
+
+  #message {
+    width: 100% !important;
+    color: #000000;
+    font-size: 12px;
+    font-size: 0.8em;
+    font-family: $fontStack;
+    letter-spacing: 0;
+    // -webkit-font-smoothing: antialiased;
+  }
+
+  #Submit {
+    clear: both;
+    display: block;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #c09260;
+    text-align: center;
+    background: transparent;
+    margin-right: 5%;
+    float: none !important;
+    outline: none;
+    width: 100px;
+    margin: 10px auto 0;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 0 !important;
+    color: #000000;
+    font-size: 12px;
+    font-size: 0.8em;
+    font-family: $fontStack;
+    letter-spacing: 0;
+    // -webkit-font-smoothing: antialiased;
+  }
+
+  select{
+    width:95%;
+    height:60px;
+    padding: 35px 15px 0px  0px;
+    margin:0px;
+    vertical-align: middle;
+    background: #f2f2f2;
+    border:0;
+    border-radius:0 !important;
+    /*border:1px solid #0000ff;*/
+    text-align:left;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-indent: 8px;
+
+    font-family: $fontStack;
+    text-align: left;
+    text-align-last: left;
+    text-align: -webkit-left;
+    outline: none;
+    align-items: initial;
+    text-transform: uppercase;
+
+    color: #000000;
+
+    font-size: 12px;
+    font-size: 0.8em;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+
+  }
+
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #000000;
+    font-size: 12px;
+    font-size: 0.8em;
+    font-family: $fontStack;
+    letter-spacing: 0;
+    // -webkit-font-smoothing: antialiased;
+  }
+
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #000000;
+    font-size: 12px;
+    font-size: 0.8em;
+    font-family: $fontStack;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    // -webkit-font-smoothing: antialiased;
+  }
+
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #000000;
+    font-size: 12px;
+    font-size: 0.8em;
+    font-family: $fontStack;
+    letter-spacing: 0;
+    // -webkit-font-smoothing: antialiased;
+  }
+
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: #000000;
+    font-size: 12px;
+    font-size: 0.8em;
+    font-family: $fontStack;
+    letter-spacing: 0;
+    // -webkit-font-smoothing: antialiased;
+  }
+
+  h2 {
+    font-size: 16px;
+    font-size: 1em;
+  }
+
+  a {
+    margin-top: 2%;
+    font-size: 16px;
+    font-size: 1em;
+  }
+}
+/*@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+     {
+
+       form select{
+             text-indent: 40%;
+             }
+
+     }
+     _::-webkit-:not(:root:root), .content form select{
+             text-indent: 40%;
+             }
+
+     @supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true))
+     and (not (-moz-appearance:none))
+     {
+
+        form select{
+             text-indent: 40%;
+             }
+
+             }*/
+option {
+  text-align: left;
+  /* reset to left*/
+}
+
+form select > option {
+  padding: 20px;
+}
+
+form select option#first {
+  color: #fff;
+}
+
+form {
+  figure {
+    margin-right: -5px;
+  }
+}
+
+section#contRow2 {
+  article {
+    figure {
+      display: block;
+      margin: 0 auto 35px;
+      h2,p, a {
+        font-family: $fontStack;
+        font-size: 14px;
+        font-size: 0.875em;
+        font-weight: 300;
+        line-height: 1.29;
+        letter-spacing: 0.1px;
+        text-align: center;
+        color: #000000;
+        display: block;
+        margin:5px auto 0;
+      }
+      h2{
+        margin: 15px auto 0;
+      }
+
+
+      a{
+        text-decoration: underline;
+        color: #000000;
+        font-family: $fontStack;
+        -webkit-font-smoothing: initial;
+
+        &:hover, &:visited, &:focus, &:active{
+          font-family: $fontStack;
+          text-decoration: underline;
+          color: #000000;
+        }
+      }
+
+      a.phoneNum{
+        margin: 15px auto 0;
+        text-decoration: none;
+        &:hover, &:visited, &:focus, &:active{
+          text-decoration: none;
+        }
+      }
+
+    }
+  }
+}
+
+
+
+section#contRow3 {
+  article.contPartners{
+    figure{
+      vertical-align: middle;
+    }
+  }
+  article {
+    figure {
+      margin: 20px auto;
+      margin-right: 5%;
+      vertical-align: top;
+
+      &:last-child{
+        margin-right:auto;
+      }
+
+      img{
+        width: 60%;
+        margin: 0 auto 0px;
+      }
+
+      h2.gradHeading {
+        font-family: $fontStack;
+        font-size: 18px;
+        font-size: 1.125em;
+        font-weight: 500;
+        letter-spacing: 0.1px;
+        margin: 0 auto 25px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      h3, a {
+        font-family: $fontStack;
+        font-size: 14px;
+        font-size: 0.875em;
+        font-weight: 300;
+        line-height: 1.29;
+        letter-spacing: 0.1px;
+        text-align: center;
+        color: #000000;
+        display: block;
+        margin:5px auto 0;
+      }
+
+      h3{
+        margin: 15px auto 0;
+      }
+
+      a{
+        text-decoration: underline;
+        color: #000000;
+        font-family: $fontStack;
+        -webkit-font-smoothing: initial;
+        margin: 0px auto 0;
+
+        &:hover, &:visited, &:focus, &:active{
+          font-family: $fontStack;
+          text-decoration: underline;
+          color: #000000;
+        }
+      }
+      a.phoneNum{
+        margin: 15px auto 0;
+        text-decoration: none;
+        &:hover, &:visited, &:focus, &:active{
+          text-decoration: none;
+        }
+
+      }
+    }
+  }
+}
+
+
+section#contDownloads{
+  article{
+    h2.gradHeading {
+      font-family: $fontStack;
+      font-size: 24px;
+      font-size: 1.5em;
+      font-weight: 500;
+      letter-spacing: 0.1px;
+      text-align: left;
+      text-transform: uppercase;
+
+      margin: 30px auto;
+    }
+  }
+
+  article.downloadLinks{
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 40px 0;
+    figure{
+      margin-right: -5px;
+
+      &:last-child{
+        margin-right:0;
+      }
+      a{
+
+      }
+    }
+  }
+}
+
+
+
+/*Mobile CSS for Contact Page */
+@media screen and (min-width: 300px) and (max-width: 999px) {
+
+  form #message {
+      width: 97% !important;
+  }
+
+section#contRow2 article figure h2, section#contRow2 article figure p, section#contRow2 article figure a {
+    font-size: 14px;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.29;
+    letter-spacing: 0.1px;
+}
+
+section#contRow3 article figure {
+    margin: 2.5em auto;
+    margin-right: 0;
+    vertical-align: top;
+}
+
+section#contDownloads article.downloadLinks {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 2em 0;
+}
+
+section#contDownloads article.downloadLinks figure {
+    margin-right: -5px;
+    margin: 1em auto;
+}
+
+.downloadLinks figure a {
+    font-size: 16px;
+    font-size: 1.15em;
+    display: block;
+}
+
+
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  form input {
+    width: 100%;
+    font-size: 16px;
+    font-size: 1.15em;
+  }
+
+  form #Submit {
+      width: 125px;
+      font-size: 14px;
+      font-size: 1em;
+  }
+  section#contRow3 article figure {
+    margin: 2.5em auto;
+    margin-right: 0;
+    vertical-align: top;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  section#contRow3 article figure {
+    margin: 2.5em auto;
+    margin-right: -5px;
+    vertical-align: top;
+}
+}

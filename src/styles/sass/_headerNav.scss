@@ -1,0 +1,332 @@
+/* ===========================
+     Author: Bhargav Gandhi (BG)
+     Description: _headerNav.scss
+     =========================== */
+header.row {
+  z-index: 999999;
+  min-height: 50px;
+  transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+}
+
+#mainNav {
+  border: 0 none;
+  background: transparent;
+  display: block;
+  margin: 0;
+}
+
+#mainNav .navbar-brand > img,
+#nav-icon3 .pageTitle,
+#nav-icon3 img {
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
+header {
+  height: auto;
+  padding: 0 11px 0 25px;
+
+  &.navOpenMain {
+    background: #fff !important;
+  }
+
+  &.navOpen {
+    position: absolute;
+    z-index: 999999;
+    background: #fff;
+
+    .mainMenu {
+      padding: 0;
+    }
+  }
+
+  .mainMenu {
+    padding: 0;
+
+    a {
+      margin: 2.3em 5px 0;
+      text-decoration: none;
+
+      &:active,
+      &:focus,
+      &:hover,
+      &:visited {
+        text-decoration: none;
+      }
+
+      figure {
+        text-align: center;
+
+        img {
+          width: 90%;
+        }
+      }
+    }
+
+    .dropdown-menu {
+      border: 1px solid $borderBlue;
+      padding: 0;
+
+      a {
+        margin: 0 5px;
+        font-size: 14px;
+        font-size: 0.875em;
+        letter-spacing: 0.7px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000 !important;
+        -webkit-font-smoothing: antialiased;
+        font-family: "ReplicaStd-Regular",sans-serif;
+        text-decoration: none;
+        padding: 10px;
+      }
+    }
+
+    .dropdown-menu > li > a:focus,
+    .dropdown-menu > li > a:hover {
+      color: $fontBlue !important;
+      text-decoration: none;
+      background-color: transparent;
+    }
+  }
+
+  .navbar-toggle {
+    padding: 5px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    background-image: none;
+    border: 0 solid transparent;
+    border-radius: 0;
+  }
+}
+
+#mainNav.navbar-default .navbar-nav > li > a {}
+
+#mainNav .nav > li > a {
+  cursor: pointer;
+  font-size: 14px;
+  font-size: 0.875em;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: #000 !important;
+  -webkit-font-smoothing: antialiased;
+  font-family: $fontStack;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: color, border-color 0.3s ease-in-out;
+
+  &:before {
+    content: "";
+    background: url("../../images/star.svg");
+    background-size: 12px 11px;
+    background-repeat: no-repeat;
+    position: absolute;
+    fill: $starBlue;
+    left: 15px;
+    margin: 0 auto;
+    width: 12px;
+    height: 11px;
+    border: 0;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+#mainNav .nav > li > a:focus,
+#mainNav .nav > li > a:hover,
+#mainNav.navbar-default .navbar-nav > li > a:focus,
+#mainNav.navbar-default .navbar-nav > li > a:hover,
+#mainNav .nav > li.active > a {
+  background-color: transparent;
+  color: $fontBlue !important;
+  border: 1px solid $borderBlue !important;
+
+  &:before {
+    background: url("../../images/star-blue.svg") !important;
+  }
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  background-color: transparent;
+}
+
+#mainNav .nav > li > a:hover,
+#mainNav.navbar-default .navbar-nav > li > a:hover {
+  color: $fontBlue !important;
+  border: 1px solid $borderBlue;
+
+  &:before {
+    background: url("../../images/star-blue.svg");
+  }
+}
+/*logo address*/
+h2.mainAdd {
+  font-size: 13px;
+  font-size: 0.8em;
+  color: #554b64;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  left: 0;
+  text-transform: capitalize;
+}
+
+.topLinks {
+  position: absolute;
+  right: 0;
+
+  .nav {
+    margin: 0;
+  }
+
+  .navbar-nav > li > a {
+    font-size: 14px !important;
+    font-size: 0.875em !important;
+    color: #554b64 !important;
+    letter-spacing: 2px !important;
+    word-spacing: 2px !important;
+    font-family: $fontStack !important;
+    -webkit-font-smoothing: antialiased;
+    text-transform: capitalize;
+  }
+
+  .navbar-nav > li.Last > a {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 999px) {
+  header {
+    padding: 0 0 10px;
+
+    .mainMenu {
+      a {
+        margin: 1.4em 5px;
+        text-decoration: none;
+
+        &.dropdown-toggle {
+          margin: 1.4em 5px 0;
+        }
+      }
+
+      .dropdown-menu {
+        position: relative;
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+        box-shadow: 0 0 0 rgba(0,0,0,0.175);
+        border: 0;
+        &.greybg{
+          background: #ebebeb;
+        }
+        a {
+          text-align: left;
+          padding: 0 25px 10px 40px !important;
+          color: $fontBlue !important;
+        }
+      }
+    }
+  }
+
+  #mainNav {
+    display: block;
+    float: none;
+  }
+
+  #mainNav .nav > li > a {
+    cursor: pointer;
+    font-size: 14px;
+    font-size: 0.875em;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    color: $fontBlue !important;
+    -webkit-font-smoothing: antialiased;
+    font-family: $fontStack;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: color, border-color 0.3s ease-in-out;
+
+    &:before {
+      content: "";
+      background: url("../../images/star-blue.svg");
+      background-size: 12px 11px;
+      background-repeat: no-repeat;
+      position: absolute;
+      fill: $starBlue;
+      left: 15px;
+      top: 15px;
+      margin: 0 auto;
+      width: 12px;
+      height: 11px;
+      border: 0;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  #mainNav {
+    .navbar-nav {
+      li {
+        &.greybg {
+          background: #ebebeb;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1000px) {
+  .dropdown-menu {
+    border: 1px solid $borderBlue;
+    padding: 0;
+
+    li {
+      border-bottom: 1px solid $borderBlue;
+
+      &.last {
+        border: 0;
+      }
+    }
+  }
+
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:focus,
+  .navbar-default .navbar-nav > .open > a:hover {
+    background-color: transparent;
+    color: $fontBlue !important;
+    border: 1px solid $borderBlue !important;
+
+    &:before {
+      background: url("../../images/star-blue.svg") !important;
+    }
+  }
+
+  #mainNav.navbar-default .navbar-nav > li.dropdown.open > a {
+    background-color: transparent;
+    color: $fontBlue !important;
+    border: 1px solid $borderBlue !important;
+
+    &:before {
+      background: url("../../images/star-blue.svg") !important;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-collapse.collapse,
+  .navbar-header {
+    float: none !important;
+    display: inline-block !important;
+    vertical-align: middle;
+    height: auto;
+  }
+
+  .navbar-collapse.collapse {
+    float: right !important;
+  }
+}

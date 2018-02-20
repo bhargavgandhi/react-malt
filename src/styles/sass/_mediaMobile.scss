@@ -1,0 +1,79 @@
+/* ===========================
+     Author: Bhargav Gandhi (BG)
+     Description: _mediaMobile.scss
+     =========================== */
+/* Media Queries Mobile */
+@media screen and (min-width: 300px) {
+
+}
+@media screen and (min-width: 300px) and (max-width: 999px) {
+  .desk,
+  .nav>li.desk{
+    display: none;
+  }
+  .mob,
+  .nav>li.mob{
+    display: block;
+  }
+
+
+  .rowMarginTop5 {
+    margin-top: 0 !important;
+  }
+
+  .mobSidePaddingNone {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .mobMarginBtmNone {
+    margin-bottom: 0 !important;
+  }
+
+  #introVideoHome {
+    border: 0 solid #fff;
+  }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) and (orientation: landscape) {
+
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+
+}
+//
+// @media screen and (min-width: 300px) and (max-width: 767px) {}
+// @media screen and (min-width: 900px) and (max-height:600px) {}
+// @media screen and (min-width: 300px) and (max-width: 400px) {}
+// /* ----------- iPhone 4 and 4S ----------- */
+// /* Portrait and Landscape */
+// @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {}
+// /* Portrait */
+// @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+// /* Landscape */
+// @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+// /* ----------- iPhone 5 and 5S ----------- */
+// /* Portrait and Landscape */
+// @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {}
+// /* Portrait */
+// @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+// /* Landscape */
+// @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+// /* ----------- iPhone 6 ----------- */
+// /* Portrait and Landscape */
+// @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {}
+// /* Portrait */
+// @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+// /* Landscape */
+// @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+// /* ----------- iPhone 6+ ----------- */
+// /* Portrait and Landscape */
+// @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {}
+// /* Portrait */
+// @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
+// /* Landscape */
+// @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}
+// /* Landscape */
+// @media only screen and (min-device-width: 412px) and (max-device-width: 732px) and (orientation: landscape) {}

@@ -1,0 +1,264 @@
+/* ===========================
+     Author: Bhargav Gandhi (BG)
+     Description: _base.scss
+     =========================== */
+@charset "utf-8";
+
+// @font-face {
+//   font-family: "ReplicaStd-Regular";
+//   src: url("../fonts/ReplicaStd-Regular.otf") format("opentype"), /* Open Type Font */
+//     url("../fonts/ReplicaStd-Regular.woff") format("woff"); /* Modern Browsers */
+//   font-weight: normal;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: "ReplicaStd-Light";
+//   src: url("../fonts/ReplicaStd-Light.otf") format("opentype"), /* Open Type Font */
+//     url("../fonts/ReplicaStd-Light.woff") format("woff"); /* Modern Browsers */
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "MaisonNeue-Medium";
+//   src: url("../fonts/MaisonNeue-Medium.eot"); /* IE9 Compat Modes */
+//   src: url("../fonts/MaisonNeue-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+//     url("../fonts/MaisonNeue-Medium.otf") format("opentype"), /* Open Type Font */
+//     url("../fonts/MaisonNeue-Medium.svg") format("svg"), /* Legacy iOS */
+//     url("../fonts/MaisonNeue-Medium.ttf") format("truetype"), /* Safari, Android, iOS */
+//     url("../fonts/MaisonNeue-Medium.woff") format("woff"), /* Modern Browsers */
+//     url("../fonts/MaisonNeue-Medium.woff2") format("woff2"); /* Modern Browsers */
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+
+/* ALTR LABS Style Guide */
+$fontStack: 'ReplicaStd-Regular', sans-serif;
+$ReplicaStdReg: 'ReplicaStd-Regular', sans-serif;
+$ReplicaStdLight: 'ReplicaStd-Light', sans-serif;
+
+$buttonColor: transparent;
+$buttonBorderColor: transparent;
+/* $bgColorHome: #F9F6F4;*/
+$bgColorHome: #ffffff;
+$bgColor2: #ffffff;
+$fontColor: #3c3c3b;
+$fontColor2: #3c3c3b;
+
+$borderBlue: #6fd4f4;
+$fontBlue: #00b3ed;
+$starBlue: #282828;
+
+@mixin transEase($sec) {
+  -webkit-transition: all $sec ease-in-out;
+  -moz-transition: all $sec ease-in-out;
+  -o-transition: all $sec ease-in-out;
+  -ms-transition: all $sec ease-in-out;
+  transition: all $sec ease-in-out;
+}
+/* how about we level the playing field - time to reset! */
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+big,
+blockquote,
+body,
+button,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+section,
+small,
+span,
+strike,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+tt,
+ul,
+var {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: $fontStack;
+  vertical-align: baseline;
+  line-height: 1;
+  /* -webkit-font-smoothing: antialiased;*/
+  -webkit-font-smoothing: antialiased;
+}
+/* html5 elements */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: $fontColor !important;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: $fontStack !important;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  background-color: $bgColorHome !important;
+  color: $fontColor !important;
+  overflow: hidden;
+  font-family: $fontStack;
+  //max-width: 2000px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: $fontColor;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:visited {
+    color: inherit;
+  }
+}
+
+p {
+  margin-top: 10px;
+}
+/* image styles */
+img {}
+/*margin styles */
+.marginRight {
+  margin: 0;
+}
+
+.marginCenter {
+  margin: 0 auto;
+}
+
+.row {
+  margin: 0 !important;
+  width: 100%;
+}
+
+.FullWidth {
+  margin: 0 !important;
+  width: 100%;
+}
+
+.container {
+  padding: 0 !important;
+  background-color: transparent;
+  background: transparent;
+  width: 100%;
+  max-width: 100% !important;
+}
+
+.fullContainer{
+  padding: 0 !important;
+  background-color: transparent;
+  background: transparent;
+  width: 100%;
+  max-width: none !important;
+}
+
+div#preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: #333 url('../images/loading.gif') no-repeat center center;
+  pointer-events: none;
+}
+
+.Show {
+  opacity: 1 !important;
+}
+
+.Hide {
+  opacity: 0 !important;
+}
+
+::selection {
+  background: #fff;
+  color: #000;
+  text-shadow: none;
+}

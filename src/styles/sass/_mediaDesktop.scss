@@ -1,0 +1,24 @@
+/* ===========================
+     Author: Bhargav Gandhi (BG)
+     Description: _mediaDesktop.scss
+     =========================== */
+
+/* Media Queries Desktop */
+
+@media screen and (min-width: 1000px){
+  .desk,
+  .nav>li.desk{
+    display: block;
+  }
+  .mob,
+  .nav>li.mob{
+    display: none;
+  }
+
+  .mobLists {
+    display: none;
+  }
+  .floatRightDesk{
+    float: right !important;
+  }
+}

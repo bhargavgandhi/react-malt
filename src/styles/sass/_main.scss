@@ -1,0 +1,208 @@
+/* ===========================
+     Author: Bhargav Gandhi (BG)
+     Description: main.scss
+     =========================== */
+//  $fontStack: 'MaisonNeue-Medium', sans-serif;
+//  $MaisonNeueDemi: 'MaisonNeue-Demi', sans-serif;
+//  $MaisonNeueMedium: 'MaisonNeue-Medium', sans-serif;
+//  $MaisonNeueLight: 'MaisonNeueLight', sans-serif;
+//  $LinotypeBold: 'LinotypeBrewery-Bold', sans-serif;
+//  $Linotype: 'LTBreweryMedium', sans-serif;
+
+.margin-auto {
+  margin: 0 auto;
+}
+
+#introVideoHome {
+  width: 100%;
+  height: 100%;
+  border: 20px solid #fff;
+  position: absolute;
+
+  #introVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    transition: 1s opacity;
+  }
+}
+/*Home Page */
+.home {
+  .fullContainer {}
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.center-inner {
+  width: 100%;
+  height: auto;
+  margin-left: -50%;
+  text-align: center;
+  max-width: 100%;
+}
+
+.btn {
+  clear: both;
+  display: block;
+  font-family: $fontStack;
+  font-size: 14px;
+  font-size: 0.875em;
+  line-height: 1.29;
+  letter-spacing: 0.1px;
+  text-align: center;
+  color: #000000;
+  padding: 1.4em;
+  background: transparent;
+  border: 1px solid #c09260;
+  background: transparent;
+  margin-right: 3em;
+  float: none !important;
+  outline: none;
+  max-width: 220px;
+  max-width: 16em;
+  margin: 10px auto 0;
+  -webkit-font-smoothing: antialiased;
+  border-radius: 0 !important;
+}
+
+section{
+  margin: 0 auto;
+  padding: 4em 0;
+}
+
+.dark-bg{
+  background: #000;
+  color: #fff;
+
+  h1, h2, p {
+    color: #fff;
+  }
+}
+
+
+.bar-bottom,
+.bar-top {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.bar-top {
+  top: 13vh;
+}
+
+.bar-bottom {
+  bottom: 3vh;
+}
+
+.main {
+  width: 100%;
+}
+
+.malt-house-center-logo {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: translate3d(0, -50%, 0);
+  width: 400px;
+  z-index: 99;
+}
+
+.janus-logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 8vh;
+  margin: 0 auto;
+  width: 136px;
+  z-index: 99;
+}
+@media screen and (max-width: 999px) {
+  .bar-bottom,
+  .bar-top {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 89%;
+    margin: 0 auto;
+  }
+
+  .bar-top {
+    top: 11vh;
+  }
+
+  .bar-bottom {
+    bottom: 3vh;
+  }
+
+  .full-height {
+    height: 100vh;
+  }
+
+  footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    height: 20px;
+    padding: 16px;
+    z-index: 999;
+
+    .bar-bottom {
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+}
+@media screen and (min-width: 1000px) {
+  .full-height {
+    height: 100%;
+
+    .container,
+    .content {
+      height: 100vh;
+    }
+
+    .main {
+      height: 89vh;
+
+      .main-hero-image {
+        height: 100%;
+        background: no-repeat center/cover url("http://placehold.it/1280x700");
+
+        img {
+          display: none;
+        }
+      }
+    }
+
+    header {
+      height: 11vh;
+
+      .container {
+        height: auto;
+      }
+    }
+
+    .bar-top {
+      top: 12vh;
+    }
+  }
+}
